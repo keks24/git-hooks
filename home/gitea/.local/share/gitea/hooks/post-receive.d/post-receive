@@ -141,7 +141,7 @@ mirrorRepository()
     # mirror push
     # should run in the background, due to long execution time
     /usr/bin/git push --mirror --quiet "${protocol_type}://${username}:${token}@${url}/${current_repository_name}" >/dev/null 2>&1 &
-    /bin/echo "${url}/${current_repository_name}: mirror push initiated..."
+    /bin/echo "${protocol_type}://${url}/${current_repository_name}: mirror push initiated..."
     /bin/sleep 0.4
 }
 
