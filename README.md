@@ -1,2 +1,2 @@
-# git-hooks
-useful git hook scripts
+# gitea-supplementary
+useful things to supplement `gitea`.
