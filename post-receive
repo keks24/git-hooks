@@ -67,7 +67,7 @@ then
     /bin/echo -e "\e[01;31mLock file '${lock_file}' is present, try pushing again in a few minutes...\e[0m"
     exit 1
 else
-    touch "${lock_file}"
+    /bin/touch "${lock_file}"
 fi
 
 command_list=(git pwd rm sleep)
