@@ -1,0 +1,12 @@
+# custom - 20191103 - rfischer: add the main socket for "gitea" for the unprvileged user "gitea" using the privileged port "443"
+[Unit]
+Description=Gitea Web Socket
+PartOf=gitea.service
+
+[Socket]
+Service=gitea.service
+ListenStream=443
+NoDelay=true
+
+[Install]
+WantedBy=sockets.target
