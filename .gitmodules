@@ -1,0 +1,3 @@
+[submodule "submodules/update-gitea"]
+	path = submodules/update-gitea
+	url = https://codeberg.org/keks24/update-gitea.git
