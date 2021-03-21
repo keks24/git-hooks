@@ -104,11 +104,11 @@ codeberg_token_filename="${codeberg_url}.${token_filename_suffix}"
 codeberg_token="$(< ${token_directory}/${codeberg_token_filename})"
 codeberg_profile_url="${codeberg_url}/${codeberg_username}"
 ## gitea.com
-gitea_url="gitea.com"
-gitea_username="${profile_username}"
-gitea_token_filename="${gitea_url}.${token_filename_suffix}"
-gitea_token="$(< ${token_directory}/${gitea_token_filename})"
-gitea_profile_url="${gitea_url}/${gitea_username}"
+#gitea_url="gitea.com"
+#gitea_username="${profile_username}"
+#gitea_token_filename="${gitea_url}.${token_filename_suffix}"
+#gitea_token="$(< ${token_directory}/${gitea_token_filename})"
+#gitea_profile_url="${gitea_url}/${gitea_username}"
 ## github.com
 github_url="github.com"
 github_username="${profile_username}"
@@ -157,7 +157,7 @@ main()
     ## codeberg.org
     mirrorRepository "${codeberg_username}" "${codeberg_token}" "${codeberg_profile_url}"
     ## gitea.com
-    mirrorRepository "${gitea_username}" "${gitea_token}" "${gitea_profile_url}"
+    #mirrorRepository "${gitea_username}" "${gitea_token}" "${gitea_profile_url}"
     ## github.com
     mirrorRepository "${github_username}" "${github_token}" "${github_profile_url}"
     ## gitlab.com
